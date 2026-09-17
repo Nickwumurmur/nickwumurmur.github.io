@@ -1,0 +1,28 @@
+/* Glint 公開頁（支援 / 隱私權）— 沿用 design-brand：暖白紙感 + 石墨灰 */
+:root{--canvas:#F7F4EF;--ink:#3A3733;--muted:#7A756E;--line:#E4DFD6;--card:#FFFDF9;--accent:#3A3733}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:16px/1.7 -apple-system,"SF Pro Text","PingFang TC","Hiragino Sans","Apple SD Gothic Neo",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;max-width:720px;margin:0 auto;padding:20px 20px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"New York","Songti TC",Georgia,serif;font-size:22px;letter-spacing:.5px}
+.brand img{border-radius:10px}
+.langs{display:flex;gap:6px;flex-wrap:wrap}
+.langs button{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:4px 12px;font:inherit;font-size:13px;cursor:pointer}
+.langs button.on{background:var(--ink);border-color:var(--ink);color:var(--canvas)}
+main{max-width:720px;margin:0 auto;padding:24px 20px 48px}
+h1{font-family:"New York","Songti TC",Georgia,serif;font-weight:600;font-size:32px;line-height:1.25;margin:8px 0 4px}
+h2{font-family:"New York","Songti TC",Georgia,serif;font-weight:600;font-size:20px;margin:32px 0 8px}
+.updated{color:var(--muted);font-size:13px;margin:0 0 20px}
+.intro{font-size:17px}
+ul{padding-left:22px}
+li{margin:4px 0}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.hero img{width:112px;height:112px;border-radius:26px;box-shadow:0 6px 24px rgba(58,55,51,.12)}
+.tag{color:var(--muted);margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:16px 0}
+.card h2{margin-top:0}
+.faq dt{font-weight:600;margin-top:14px}
+.faq dd{margin:4px 0 0}
+footer{max-width:720px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+[hidden]{display:none!important}
+@media (prefers-color-scheme:dark){:root{--canvas:#1E1C1A;--ink:#EDE8E0;--muted:#A19B92;--line:#3A3733;--card:#26231F}}
